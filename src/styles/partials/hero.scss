@@ -42,6 +42,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	transition: all 3s ease 0s;
 	@media (max-width: 1920px){
 		max-width: 59.90vw;
 	}
@@ -51,6 +52,12 @@
 		position: relative;
 		z-index: 1;
 		background: url('../images/hero/bg-hero-body.png') center / cover no-repeat;
+	}
+
+	&.hidden {
+		@media (max-width: 768px){
+			opacity: 0;
+		}
 	}
 	&__title {
 		width: 100%;

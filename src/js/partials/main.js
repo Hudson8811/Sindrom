@@ -59,6 +59,7 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$('.hero__preload-mobile').fadeOut(700);
 			$('body').removeClass('no-scroll')
+			$('.hero__body').removeClass('hidden')
 		}, 4000)
 	}
 })
