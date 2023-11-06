@@ -1,4 +1,17 @@
 $(document).ready(function() {
+	$('.scroll-to').on('click', function() {
+
+		let href = $(this).attr('href');
+
+		$('html, body').animate({
+			scrollTop: $(href).offset().top
+		}, {
+			duration: 700,
+			easing: "linear"
+		});
+
+		return false;
+	});
 	var test__swiper = new Swiper(".test__swiper", {
 		pagination: {
 			el: ".swiper-pagination",
