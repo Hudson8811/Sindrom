@@ -12,6 +12,15 @@ $(document).ready(function() {
 
 		return false;
 	});
+	$(document).on('scroll', function() {
+		if ($(window).scrollTop() > 40) {
+			$('.hero__arrow-wrapper').addClass('hidden')
+		} else if($(window).scrollTop() < 40) {
+			$('.hero__arrow-wrapper').removeClass('hidden')
+
+		}
+		console.log($(window).scrollTop());
+	});
 	var test__swiper = new Swiper(".test__swiper", {
 		pagination: {
 			el: ".swiper-pagination",

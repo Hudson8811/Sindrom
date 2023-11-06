@@ -13,7 +13,7 @@
 	}
 	&__arrow {
 		position: absolute;
-		bottom: 15px;
+		bottom: 30px;
 		left: 50%;
 		width: 50px;
 		height: 20px;
@@ -25,12 +25,30 @@
 		@media (max-width: 1920px){
 			width: 2.60vw;
 			height: 1.04vw;
-			bottom: 0.78vw;
+			bottom: 2vw;
 		}
 		@media (max-width: 768px){
 			width: 7.6vw;
 			height: 4.04vw;
-			bottom: 7.14vw;
+			bottom: -12vw;
+		}
+		&-wrapper {
+			transition: all 0.7s ease 0s;
+			&.hidden {
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+		&-wrapper-mob {
+			display: none;
+			@media (max-width: 768px){
+				display: block;
+			}
+		}
+		&-wrapper-desk {
+			@media (max-width: 768px){
+				display: none;
+			}
 		}
 	}
 	@keyframes hero-arrow {
@@ -169,6 +187,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			position: relative;
 		}
 	}
 	&__name {
