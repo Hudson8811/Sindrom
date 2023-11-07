@@ -1,10 +1,11 @@
 .test
 	.test__container 
 		.test__left.left-test
-			.left-test__name 
-				img(src="images/test/name.png", alt="alt")
-			.left-test__date в кино с 9 ноября
-			.left-test__btn купить билет
+			.left-test__inner(data-aos="fade-right" data-aos-delay="0") 
+				.left-test__name 
+					img(src="images/test/name.png", alt="alt")
+				.left-test__date в кино с 9 ноября
+				.left-test__btn  купить билет
 
 		.test__right
 			.test__swiper.swiper
@@ -14,22 +15,22 @@
 							.test__image 
 								img(src="images/test/1.png", alt="alt")
 								span.test__num.test__num--black 1
-							.test__title
+							.test__title(data-aos="fade-left" data-aos-delay="0") 
 								|Ваш партнер совершает какой-то нетипичный для него поступок. Вы...
-							.test__radiobuttons
+							.test__radiobuttons(data-aos="fade-left" data-aos-delay="0") 
 								.test__radiobuttons-item.test__radiobuttons-itemA.test__radiobuttons-item1.active
 									input#test__radiobuttons-itemA1(type='radio' value='0' name='nameradio1')
-									label(for='test__radiobuttons-itemA1')
+									label(for='test__radiobuttons-itemA1') 
 										span
 										| А — считаете это ошибкой и ждете подвоха.
 								.test__radiobuttons-item.test__radiobuttons-itemB.test__radiobuttons-item1
 									input#test__radiobuttons-itemB1(type='radio' value='2' name='nameradio1')
-									label(for='test__radiobuttons-itemB1')
+									label(for='test__radiobuttons-itemB1') 
 										span
 										| B — усиленно ищете в этом какие-то скрытые плюсы.
 								.test__radiobuttons-item.test__radiobuttons-itemC.test__radiobuttons-item1
 									input#test__radiobuttons-itemC1(type='radio' value='1' name='nameradio1')
-									label(for='test__radiobuttons-itemC1')
+									label(for='test__radiobuttons-itemC1') 
 										span
 										| C — просто отмечаете это как нечто новое.
 					.swiper-slide.swiper-slide2

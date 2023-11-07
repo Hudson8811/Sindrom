@@ -5,6 +5,7 @@
 	justify-content: center;
 	min-height: 100vh;
 	position: relative;
+	overflow: hidden;
 	@media (max-width: 1920px){
 		padding: 2.60vw 4.69vw 1.56vw;
 	}
@@ -101,7 +102,6 @@
 		z-index: 1;
 		background: url('../images/hero/bg-hero-body.png') center / cover no-repeat;
 	}
-
 	&.hidden {
 		@media (max-width: 768px){
 			opacity: 0;
