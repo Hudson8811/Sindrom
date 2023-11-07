@@ -84,4 +84,16 @@ $(document).ready(function() {
 			$('.hero__body').removeClass('hidden')
 		}, 4000)
 	}
+
+
+
+
+
+
+
+
+
+
+
+	$('.open-video').fancybox({});
 })
