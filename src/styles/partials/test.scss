@@ -10,9 +10,9 @@
 		
 	}
 	@media (max-width: 768px){
-		padding: 5.71vw 7.14vw;
+		padding: 12.71vw 7.14vw;
 		background: url('../images/test/bg-mobile.png') center / cover no-repeat;
-		
+		min-height: 0;
 	}
 	.swiper-slide {
 		opacity: 0 !important;
@@ -158,7 +158,7 @@
 
 		}
 		@media (max-width: 768px){
-			margin-top: 4.57vw;
+			margin-top: 7.57vw;
 			max-width: 100%;
 		}
 		&.disable {
@@ -172,6 +172,9 @@
 				@media (max-width: 1920px){
 					margin-top: 1.25vw;
 					
+				}
+				@media (max-width: 768px){
+					margin-top: 7vw;
 				}
 			}
 			label {
@@ -192,7 +195,7 @@
 
 				}
 				@media (max-width: 768px){
-					font-size: 3.43vw;
+					font-size: 4vw;
 					line-height: 133.333%;
 				}
 				span {
@@ -216,10 +219,10 @@
 
 					}
 					@media (max-width: 768px){
-						width: 7.71vw;
-						height: 7.71vw;
-						min-width: 7.71vw;
-						min-height: 7.71vw;
+						width: 9.71vw;
+						height: 9.71vw;
+						min-width: 9.71vw;
+						min-height: 9.71vw;
 						border: 0.14vw solid #000000;
 						margin-right: 2.86vw;
 
@@ -243,8 +246,8 @@
 
 						}
 						@media (max-width: 768px){
-							min-width: 4.57vw;
-							min-height: 4.57vw;
+							min-width: 6.57vw;
+							min-height: 6.57vw;
 
 						}
 					}
@@ -271,6 +274,7 @@
 	}
 	@media (max-width: 768px){
 		padding-bottom: 0;
+		margin-top: 10vw;
 	}
 	&__inner {
 		display: flex;
